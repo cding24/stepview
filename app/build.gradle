@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 26
     defaultConfig {
-        applicationId "view.com.linghu.stepview"
+        applicationId "com.linghu.stepview"
         minSdkVersion 23
         targetSdkVersion 26
         versionCode 1
