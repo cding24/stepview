@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="这是一个封装的步骤晋级控件，比如会员（普通、黄金、钻石）等级" />
+
+    <com.linghu.view.StepView
+        android:id="@+id/vip_step"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/title"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        app:steptxt1="普通会员"
+        app:steptxt2="黄金会员"
+        app:steptxt3="钻石会员"
+        app:stepDefaultColor="#bbbbbb"
+        app:stepLineGap="8dp"
+        app:stepLineWidth="2dp"
+        app:stepNum="1"
+        app:stepRadius="10dp"
+        app:stepSelectColor="@color/common_blue"
+        app:stepTipTxtColor="#393939"
+        app:stepTipTxtSelectColor="@color/common_blue"
+        app:stepTipTxtSize="16sp"
+        app:stepTxtColor="#ffffff"
+        app:stepTxtSize="14sp" />
+
+</RelativeLayout>
